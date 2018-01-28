@@ -10,7 +10,7 @@
             <h1>Registro @{{ message }}</h1>
         </div>
         <div class="card-block">
-            <form id="registerForm">
+            <form id="registerForm" class="form-horizontal" enctype="multipart/form-data" >
                 <div class="row">
                     {{csrf_field()}}
                     <div class="col-md-9">
@@ -92,7 +92,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="user">Usuario</label>
-                                <input type="email" class="form-control" name="user" id="user" placeholder="ejemplo@mail.com">
+                                <input type="text" class="form-control" name="user" id="user" placeholder="Nombre de Usuario">
                             </div>
                             <div class="col-md-4">
                                 <label for="pass">Contraseña</label>
@@ -104,9 +104,7 @@
                             </div>
                         </div>
                         <br>
-                        <div align="right">
-                            <a href="#" class="btn btn-primary" v-on:click="addUser">Registrar</a>
-                        </div>
+
                     </div>
                     <div class="col-md-3">
                         <div align="center">
@@ -121,6 +119,9 @@
                     </div>
                 </div>
             </form>
+            <div align="right">
+                <a href="#" class="btn btn-primary" v-on:click="addUser">Registrar</a>
+            </div>
         </div>
     </div>
 @endsection

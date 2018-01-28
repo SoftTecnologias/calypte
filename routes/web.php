@@ -34,6 +34,10 @@ Route::get('/getLocalidades/{id}',[
    'uses' => 'formsController@getColonias'
 ]);
 
+Route::get('/getUsers',[
+   'uses' => 'formsController@getUsers'
+]);
+
 // parte de los usuarios
 Route::post('/user/new',[
    'uses' => 'userController@newUser'

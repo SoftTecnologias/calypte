@@ -24,11 +24,11 @@ class TablaUsers extends Migration
             $table->string('CALLE');
             $table->string('NUMERO');
             $table->integer('CP');
-            $table->string('EMAIL');
-            $table->string('TELEFONO_CEL');
-            $table->string('TELEFONO_FIJO');
+            $table->string('EMAIL')->unique();
+            $table->string('TELEFONO_CEL')->nullable();
+            $table->string('TELEFONO_FIJO')->nullable();
             $table->string('FECHA_NAC');
-            $table->string('USUARIO');
+            $table->string('USUARIO')->unique();
             $table->string('CONTRASEÑA');
         });
     }
