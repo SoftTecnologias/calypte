@@ -40,5 +40,5 @@ Route::get('/getUsers',[
 
 // parte de los usuarios
 Route::post('/user/new',[
-   'uses' => 'userController@newUser'
+   'uses' => 'UserController@newUser'
 ]);
