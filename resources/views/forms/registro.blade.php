@@ -113,7 +113,7 @@
                         <hr>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci at dignissimos dolore, ea earum eius ex fugiat ipsam iste itaque magnam necessitatibus pariatur quod, rem repellat similique sit tempore!
+
                             </p>
                         </div>
                     </div>
