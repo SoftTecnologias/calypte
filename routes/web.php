@@ -42,3 +42,21 @@ Route::get('/getUsers',[
 Route::post('/user/new',[
    'uses' => 'UserController@newUser'
 ]);
+
+//Parte movil
+
+Route::get('/movil/app/newTravel/{idUsuario}','movilController@newTravel');
+
+Route::get('/movil/app/travelPoints/{idViaje}','movilController@pointsTravel');
+
+Route::get('/movil/app/InformacionContato/{idContacto}','movilController@InformacionContato');
+
+Route::get('/movil/app/pointsContact/{idViaje}','movilController@pointsContact');
+
+Route::get('/movil/app/login','movilController@login');
+
+Route::put('/movil/app/signup','movilController@signup');
+
+Route::get('/movil/app/addcontact/{idUsuario}','movilController@addContact');
+
+Route::get('/movil/app/getContacts/{idUsuario}','movilController@getContacts');

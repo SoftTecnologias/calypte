@@ -26,7 +26,7 @@ class UserController extends Controller
                 ,'TELEFONO_FIJO' => $request->telfij
                 ,'FECHA_NAC' => $request->fecha
                 ,'USUARIO' => $request->user
-                ,'CONTRASEÑA' => bcrypt($request->pass)
+                ,'PASSWORD' => bcrypt($request->pass)
             ]);
 
             $respuesta = ["code" => 200, "msg" => 'El usuario se agrego correctamente', 'detail' => 'success'];

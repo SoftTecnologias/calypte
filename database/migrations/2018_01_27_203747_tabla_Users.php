@@ -29,7 +29,7 @@ class TablaUsers extends Migration
             $table->string('TELEFONO_FIJO')->nullable();
             $table->string('FECHA_NAC');
             $table->string('USUARIO')->unique();
-            $table->string('CONTRASEÑA');
+            $table->string('PASSWORD');
         });
     }
 

@@ -15,7 +15,8 @@ class User extends Authenticatable
     protected $table = "USERS";
     public $timestamps = false;
     protected $fillable = [
-        'NOMBRE'
+        'id'
+        ,'NOMBRE'
         ,'APE_PAT'
         ,'APE_MAT'
         ,'ESTADOID'
@@ -29,7 +30,7 @@ class User extends Authenticatable
         ,'TELEFONO_FIJO'
         ,'FECHA_NAC'
         ,'USUARIO'
-        ,'CONTRASEÑA'
+        ,'PASSWORD'
     ];
 
     /**
